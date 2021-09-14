@@ -1,0 +1,214 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a{
+    font-family: 'Work Sans', sans-serif;
+
+}
+img{
+    max-width: 100%;
+}
+.main-bg{
+    background: #f7f9ff;
+}
+/* -------------- header section ---------- */
+.main-header{
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    width: 100%;
+}
+.main-header a img {
+    width: 100px;
+}
+.main-header ul li a {
+    padding: 0 14px !important;
+    display: inline-block;
+    font-size: 17px;
+}
+/* ----------- banner section --------- */
+section.banner-section {
+    margin-top: 95px !important;
+}
+.banner-bg{
+    background: url(./img/hero-img.jpg) no-repeat center center;
+    padding: 300px 0;
+}
+.banner-section h6 {
+    font-size: 26px;
+}
+.banner-section h2 {
+    font-size: 50px;
+    color: #444;
+}
+.banner-section p {
+    font-size: 17px;
+    margin-bottom: 26px;
+    font-weight: 500;
+}
+.difolt-btn {
+    font-size: 21px;
+    padding: 7px 16px;
+    font-weight: 500;
+    background: #8392fd;
+    border: none;
+    color: #fff;
+}
+.difolt-btn:hover{
+    background: #000;
+    color: #fff;
+    transition: .4s;
+}
+/* -------------- About section -------- */
+.about-content{}
+.about-content h6 {
+    font-size: 21px;
+}
+.about-content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #444;
+}
+.about-content p {
+    font-size: 17px;
+    margin-bottom: 26px;
+    font-weight: 500;
+}
+/* ----------- counter section ------------ */
+.counters-section{
+    background: #8490ff;
+    padding: 80px 0;
+}
+.counter-content h1 {
+    font-weight: 600;
+}
+.counter-content p{
+    color: #f1f1f1 !important;
+}
+
+/* ----------- pricing table --------- */
+.main-bg{
+    background: #f7f9ff;
+}
+.pricing-table {
+    padding: 20px 30px 50px;
+    background: #fff;
+    box-shadow: 1px 1px 15px 0 #a9b7c8;
+}
+.pricing-table ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.pricing-table ul li {
+    line-height: 81px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #888;
+}
+
+.pricing-btn .btn.btn-outline-primary {
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: 500;
+    transition: .4s;
+    margin-top: 20px;
+}
+.pricing-table:hover .pricing-btn .btn.btn-outline-primary{
+    background: #6278df;
+    color: #fff;
+}
+
+.pricing-table:hover .pricing-btn .btn.btn-outline-primary:hover{
+    background: #000;
+    box-shadow: 1px 1px 15px transparent;
+    border: 1px solid #000;
+}
+.number-count h1 {
+    line-height: 130px;
+}
+.number-count {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    display: inline-block;
+}
+.pricing-table p {
+    font-size: 18px;
+    color: #000;
+}
+.pricing-table-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+}
+/* ----------- clint section -------- */
+.clind-section{}
+.clind-section .card img {
+    width: 120px;
+    margin-top: -44px;
+    margin-left: 11px;
+    margin-bottom: 19px;
+    box-shadow: 1px 1px 15px 0 rgb(98 120 223 / 61%);
+}
+.card-btn a:hover{
+    background: #444;
+    color: #fff;
+    transition: .4s;
+}
+section.clind-section p.card-text {
+    font-size: 17px;
+    word-spacing: 2px;
+    line-height: 26px;
+}
+.clind-section .card {
+    padding: 0 13px;
+}
+/* ----------- contact form ---------- */
+.contact-form {
+    padding: 35px !important;
+}
+.contact-form input {
+    padding: 13px 20px;
+}
+.contact-form textarea {
+    padding: 13px 20px;
+    height: 150px;
+}
+.form-btn button.btn.btn-primary {
+    padding: 11px 44px;
+    background: #17a2b8;
+}
+.form-btn button.btn.btn-primary:hover{
+    background: #fff;
+    border: 1px solid #17a2b8;
+    color: #17a2b8;
+    box-shadow: 1px 1px 15px 0 rgba(rgba(23, 163, 184, 0.719));
+    transition: .4s;
+}
+.contact-form .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #17a2b8;
+    outline: 0;
+    box-shadow: 1px 1px 15px 0 rgba(rgba(23, 163, 184, 0.719));
+}
+
+footer{
+    background: #04091e;
+}
+
+
+
+
+
+
+
+
