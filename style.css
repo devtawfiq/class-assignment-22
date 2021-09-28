@@ -13,92 +13,148 @@ a{
 img{
     max-width: 100%;
 }
-.main-bg{
-    background: #f7f9ff;
-}
-/* -------------- header section ---------- */
+
+/* --------- header section ------------- */
 .main-header{
-    padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1030;
     width: 100%;
+    background: #fff;
+    z-index: 1030;
 }
-.main-header a img {
-    width: 100px;
-}
-.main-header ul li a {
-    padding: 0 14px !important;
-    display: inline-block;
-    font-size: 17px;
-}
-/* ----------- banner section --------- */
-section.banner-section {
-    margin-top: 95px !important;
-}
-.banner-bg{
-    background: url(./img/hero-img.jpg) no-repeat center center;
-    padding: 300px 0;
-}
-.banner-section h6 {
-    font-size: 26px;
-}
-.banner-section h2 {
-    font-size: 50px;
-    color: #444;
-}
-.banner-section p {
-    font-size: 17px;
-    margin-bottom: 26px;
-    font-weight: 500;
-}
-.difolt-btn {
-    font-size: 21px;
-    padding: 7px 16px;
-    font-weight: 500;
-    background: #8392fd;
-    border: none;
-    color: #fff;
-}
-.difolt-btn:hover{
-    background: #000;
-    color: #fff;
-    transition: .4s;
-}
-/* -------------- About section -------- */
-.about-content{}
-.about-content h6 {
-    font-size: 21px;
-}
-.about-content h2 {
-    font-size: 36px;
-    font-weight: 500;
-    color: #444;
-}
-.about-content p {
-    font-size: 17px;
-    margin-bottom: 26px;
-    font-weight: 500;
-}
-/* ----------- counter section ------------ */
-.counters-section{
-    background: #8490ff;
-    padding: 80px 0;
-}
-.counter-content h1 {
+.main-header button.btn.btn-outline-primary {
+    padding: 5px 25px;
     font-weight: 600;
 }
-.counter-content p{
-    color: #f1f1f1 !important;
+.main-header button.btn.btn-outline-primary:hover {
+    box-shadow: 1px 1px 15px 0 #6278df;
+}
+.main-header img {
+    width: 40px;
+}
+/* ---------- banner section --------------- */
+.banner-section{
+    background: url(./img/mbr-10.jpg) no-repeat center center ;
+    padding: 170px 0;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
 }
 
-/* ----------- pricing table --------- */
+.banner-section input {
+    padding: 10px 17px;
+}
+.banner-section input:focus{
+    box-shadow: 1px 1px 15px 0 rgba(98, 121, 223, 0.8);
+}
+.banner-section button{
+    background: #59a232;
+    font-weight: 600;
+    border: none;
+    padding: 10px 17px;
+    transition: .4s;
+}
+.banner-section button:hover{
+    background: #fff;
+    color: #6278df;
+    box-shadow: 1px 1px 15px 0 #6278df;
+}
+.banner-section p.h5 {
+    font-size: 23px;
+    font-weight: 300;
+}
+.banner-section p.h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.counter-content h1 {
+    font-weight: 500;
+    font-size: 55px;
+}
+
+/* ------------ About section ------------- */
+.about-text{
+    margin-top: 80px;
+}
+.about-section{
+    background: #f7f9ff;
+}
+.about-text p {
+    font-size: 18px;
+    color: #000 !important;
+    line-height: 37px;
+}
+/* ------------ feature section ------------ */
+.feature-section h2{
+    font-weight: 400;
+}
+.feature-section p{
+    font-weight: 300;
+    font-size: 20px;
+}
+.feature-content {
+    box-shadow: 1px 1px 15px 0 #a9b7c8;
+    border-radius: 3px;
+}
+.feature-img{
+    height: 100%;
+}
+.feature-img img {
+    width: 300px;
+    height: 100%;
+}
+.feature-content .card-body h5 {
+    font-size: 19px;
+    font-weight: 500;
+}
+.feature-content .card-body p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.feature-content .card-body {
+    flex: 1 1 auto;
+    padding: 2.2rem 1rem;
+}
+/* -------------- protfolio section ------- */
+.protfolio-img{
+    position: relative;
+    
+}
+.protfolio-img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(98, 121, 223, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+
+}
+.protfolio-img:hover::before{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+/* ------------ pricing section --------- */
 .main-bg{
     background: #f7f9ff;
 }
-.pricing-table {
-    padding: 20px 30px 50px;
+.pricing-table{
+    padding: 50px;
     background: #fff;
     box-shadow: 1px 1px 15px 0 #a9b7c8;
 }
@@ -108,12 +164,18 @@ section.banner-section {
     padding-left: 0;
 }
 .pricing-table ul li {
-    line-height: 81px;
-    font-size: 22px;
-    font-weight: 600;
-    color: #888;
+    line-height: 50px;
+    font-size: 19px;
+    color: #777;
+    font-weight: 300;
 }
-
+.pricing-table ul li span {
+    color: #6278df;
+    width: 30px;
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 8px;
+}
 .pricing-btn .btn.btn-outline-primary {
     padding: 10px 20px;
     font-size: 19px;
@@ -129,27 +191,32 @@ section.banner-section {
 .pricing-table:hover .pricing-btn .btn.btn-outline-primary:hover{
     background: #000;
     box-shadow: 1px 1px 15px transparent;
-    border: 1px solid #000;
 }
-.number-count h1 {
-    line-height: 130px;
+/* ----------- testimonial section ------------ */
+.test-img{
+    width: 40%;
 }
-.number-count {
-    width: 130px;
-    height: 130px;
+.test-img img {
+    width: 69px;
+}
+.testimonial-content{
+    width: 220px;
     margin: auto;
-    border-radius: 50%;
+}
+section.testimonial-section span {
+    font-size: 68px;
+    opacity: 0.5;
+    color: #ccc;
+}
+.test-text {
+    margin-left: -13px;
     display: inline-block;
+    position: relative;
+    top: 14px;
 }
-.pricing-table p {
-    font-size: 18px;
-    color: #000;
+.test-text h5 {
+    line-height: 11px;
 }
-.pricing-table-subtitle {
-    font-size: 24px;
-    font-weight: 400;
-}
-/* ----------- clint section -------- */
 .clind-section{}
 .clind-section .card img {
     width: 120px;
@@ -164,14 +231,11 @@ section.banner-section {
     transition: .4s;
 }
 section.clind-section p.card-text {
-    font-size: 17px;
+    font-size: 13px;
     word-spacing: 2px;
-    line-height: 26px;
+    line-height: 21px;
 }
-.clind-section .card {
-    padding: 0 13px;
-}
-/* ----------- contact form ---------- */
+/* ---------------- form section ---------- */
 .contact-form {
     padding: 35px !important;
 }
@@ -184,29 +248,110 @@ section.clind-section p.card-text {
 }
 .form-btn button.btn.btn-primary {
     padding: 11px 44px;
-    background: #17a2b8;
 }
 .form-btn button.btn.btn-primary:hover{
     background: #fff;
-    border: 1px solid #17a2b8;
-    color: #17a2b8;
-    box-shadow: 1px 1px 15px 0 rgba(rgba(23, 163, 184, 0.719));
+    border: 1px solid #6278df;
+    color: #6278df;
+    box-shadow: 1px 1px 15px 0 rgba(98, 121, 223, 0.767);
     transition: .4s;
 }
 .contact-form .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #17a2b8;
+    border-color: #6278df;
     outline: 0;
-    box-shadow: 1px 1px 15px 0 rgba(rgba(23, 163, 184, 0.719));
+    box-shadow: 1px 1px 15px 0 rgba(98, 121, 223, 0.767);
 }
-
-footer{
-    background: #04091e;
+/* ------------------ Footer top secton -------- */
+.footer-top-btn button.btn.btn-outline-success {
+    padding: 12px 23px;
+    border: 1px solid #5ba533;
+    color: #5ba533;
+    font-weight: 600;
+    margin-right: 5px;
 }
+.footer-top-btn button.btn.btn-outline-success:hover{
+    background: #5ba533;
+    color: #fff;
+    box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+.footer-top-btn button.btn.btn-success{
+    background: #5ba533;
+    color: #fff;
+    box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    margin-left: 5px;
+    padding: 12px 23px;
+    border: 0;
+}
+.footer-top-btn button.btn.btn-success:hover{
+    background: #000;
+    color: #fff;
+    transition: .4s;
+    box-shadow: none;
+}
+/* ----------- responsive css ----------------- */
 
-
-
+@media (max-width: 992px) {
+    .banner-section input {
+        width: 100% !important;
+        margin-bottom: 16px;
+    }
+    .banner-section button {
+        width: 50% !important;
+    }
+    .cord-2 {
+        height: 190px;
+    }
+    .pricing-btn .btn.btn-outline-primary {
+        padding: 10px 11px;
+        font-size: 17px;
+    }
+    .card.border-0.shadow {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .feature-img-2 img {
+        height: 170px;
+        width: 178px;
+    }
+    .pricing-table {
+        margin-bottom: 30px;
+    }
+    .card.border-0.shadow {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .feature-img img {
+        width: 100%;
+    }
+}
+@media (max-width: 462px) {
+    .banner-section button {
+        padding: 10px 10px;
+    }
+    .banner-section p.h5 {
+        font-size: 19px;
+    }
+    .banner-section p.h2 {
+        font-size: 32px;
+    }
+    .banner-section {
+        padding: 100px 0;
+}
+@media (max-width: 404px) {
+    .banner-section button {
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+    .banner-section button {
+        width: 75% !important;
+    }
+}
 
 
 
